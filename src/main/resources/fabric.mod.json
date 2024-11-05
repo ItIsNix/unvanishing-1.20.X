@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "unvanishing",
+	"version": "${version}",
+	"name": "Unvanishing",
+	"description": "Adds a Sustaining enchantment that reserves your item after death, but decreases it's durability.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/unvanishing/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nixmods.unvanishing.Unvanishing"
+		],
+		"fabric-datagen": [
+			"net.nixmods.unvanishing.UnvanishingDataGenerator"
+		]
+	},
+	"mixins": [
+		"unvanishing.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
